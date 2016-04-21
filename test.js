@@ -37,9 +37,9 @@ test('save() selection', function (t) {
   t.equal(
     elm.innerHTML,
     '<p>B' +
-    '<span class="selection-marker-start"></span>' +
+    '<mark class="selection-start"></mark>' +
     'ee' +
-    '<span class="selection-marker-end"></span>p</p>',
+    '<mark class="selection-end"></mark>p</p>',
     'added selection markers'
   );
 
@@ -59,9 +59,9 @@ test('restore() no markers', function (t) {
 test('restore() markers', function (t) {
   const elm = document.body.appendChild(document.createElement('div'));
   elm.innerHTML = '<p>B' +
-    '<span class="selection-marker-start"></span>' +
+    '<mark class="selection-start"></mark>' +
     'ee' +
-    '<span class="selection-marker-end"></span>p</p>';
+    '<mark class="selection-end"></mark>p</p>';
 
   window.getSelection().removeAllRanges();
 
