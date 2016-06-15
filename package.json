@@ -32,5 +32,7 @@
     "tape": "^4.5.1",
     "testron": "^1.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "get-selection-range-from-elm": "^1.0.0"
+  }
 }

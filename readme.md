@@ -35,7 +35,7 @@ npm test
 
 ## Dependencies
 
-None
+- [get-selection-range-from-elm](https://github.com/micnews/get-selection-from-elm): window.getSelection().rangeAt(0) but only if it exists &amp; is within an element
 
 ## Dev Dependencies
 
