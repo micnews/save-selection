@@ -46,6 +46,36 @@ test('save() selection', function (t) {
   t.end();
 });
 
+test('save() selection with no content selected', function (t) {
+  const elm = document.body.appendChild(document.createElement('div'));
+  const elm2 = document.body.appendChild(document.createElement('div'));
+  elm.innerHTML = '<p>Beep</p>';
+  const text = elm.querySelector('p').childNodes[0];
+
+  const selection = window.getSelection();
+  selection.removeAllRanges();
+  const range = document.createRange();
+  range.setStart(text, 1);
+  range.setEnd(text, 1);
+  selection.addRange(range);
+
+  save(elm2);
+  t.equal(elm.innerHTML, '<p>Beep</p>',
+    'root doument must include selection');
+
+  save(elm);
+  t.equal(
+    elm.innerHTML,
+    '<p>B' +
+    '<mark class="selection-start"></mark>' +
+    '<mark class="selection-end"></mark>' +
+    'eep</p>',
+    'added selection markers'
+  );
+
+  t.end();
+});
+
 test('restore() no markers', function (t) {
   const elm = document.body.appendChild(document.createElement('div'));
   elm.innerHTML = '<p>Beep</p>';
