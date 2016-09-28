@@ -34,6 +34,6 @@
     "testron": "^1.2.0"
   },
   "dependencies": {
-    "get-selection-range-from-elm": "^1.0.0"
+    "get-selection-range-from-elm": "^2.0.1"
   }
 }
