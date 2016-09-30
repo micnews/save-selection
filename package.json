@@ -30,7 +30,7 @@
     "package-json-to-readme": "^1.5.1",
     "semistandard": "^7.0.5",
     "snazzy": "^3.0.1",
-    "tape": "^4.5.1",
+    "tape": "^4.6.2",
     "testron": "^1.2.0"
   },
   "dependencies": {
