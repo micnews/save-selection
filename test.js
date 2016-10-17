@@ -106,3 +106,26 @@ test('restore() markers', function (t) {
   t.equal(range.endOffset, 3, 'range.endOffset');
   t.end();
 });
+
+test('save() new selection with previous markers', function (t) {
+  const elm = document.body.appendChild(document.createElement('div'));
+  const markStart = '<mark class="selection-start"></mark>';
+  const markEnd = '<mark class="selection-end"></mark>';
+  const initialHtml = `<p>Bee${markStart}p${markEnd}</p>`;
+  elm.innerHTML = initialHtml;
+
+  const text = elm.querySelector('p').childNodes[0];
+  const selection = window.getSelection();
+  selection.removeAllRanges();
+  const range = document.createRange();
+  range.setStart(text, 1);
+  range.setEnd(text, 2);
+  selection.addRange(range);
+
+  save(elm);
+  const actual = elm.innerHTML;
+  const expected = `<p>B${markStart}e${markEnd}ep</p>`;
+  t.equal(actual, expected, 'added selection markers');
+
+  t.end();
+});
