@@ -35,7 +35,7 @@ npm test
 
 ## Dependencies
 
-- [get-selection-range-from-elm](https://github.com/micnews/get-selection-from-elm): window.getSelection().rangeAt(0) but only if it exists &amp; is within an element
+- [get-selection-range-from-elm](https://github.com/micnews/get-selection-range-from-elm): window.getSelection().rangeAt(0) but only if it exists &amp; is within an element
 
 ## Dev Dependencies
 
@@ -43,6 +43,7 @@ npm test
 - [babel-core](https://github.com/babel/babel/tree/master/packages): Babel compiler core.
 - [babel-preset-es2015](https://github.com/babel/babel/tree/master/packages): Babel preset for all es2015 plugins.
 - [babelify](https://github.com/babel/babelify): Babel browserify transform
+- [browserify](https://github.com/substack/node-browserify): browser-side require() the node way
 - [electron-prebuilt](https://github.com/electron-userland/electron-prebuilt): Install electron prebuilt binaries for the command-line use using npm
 - [package-json-to-readme](https://github.com/zeke/package-json-to-readme): Generate a README.md from package.json contents
 - [semistandard](https://github.com/Flet/semistandard): All the goodness of `feross/standard` with semicolons sprinkled on top.
