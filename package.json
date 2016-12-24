@@ -27,7 +27,7 @@
     "babelify": "^7.2.0",
     "browserify": "^13.1.0",
     "electron-prebuilt": "^0.37.6",
-    "package-json-to-readme": "^1.5.1",
+    "package-json-to-readme": "^2.0.0",
     "semistandard": "^7.0.5",
     "snazzy": "^3.0.1",
     "tape": "^4.5.1",
