@@ -1,6 +1,6 @@
 {
   "name": "save-selection",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Save & restore selections in a document, using `<mark>` elements",
   "main": "dist/index.js",
   "scripts": {
