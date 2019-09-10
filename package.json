@@ -28,7 +28,7 @@
     "browserify": "^14.4.0",
     "electron-prebuilt": "^0.37.6",
     "package-json-to-readme": "^1.5.1",
-    "semistandard": "^7.0.5",
+    "semistandard": "^9.2.0",
     "snazzy": "^3.0.1",
     "tape": "^4.5.1",
     "testron": "^1.2.0"
